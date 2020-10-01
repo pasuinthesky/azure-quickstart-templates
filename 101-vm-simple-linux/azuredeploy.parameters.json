@@ -3,13 +3,26 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-      "value": "GEN-UNIQUE"
+      "value": "liujia7"
     },
-    "adminPasswordOrKey": {
-      "value": "GEN-PASSWORD"
+    "adminPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/b7135393-f28b-4a35-b97a-6b68abbd309e/resourceGroups/myResourceGroup/providers/Microsoft.KeyVault/vaults/myvault-3721"
+        },
+        "secretName": "inVault-adminPassword"
+      }
+    },
+    "adminSshKey": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/b7135393-f28b-4a35-b97a-6b68abbd309e/resourceGroups/myResourceGroup/providers/Microsoft.KeyVault/vaults/myvault-3721"
+        },
+        "secretName": "inVault-adminSshKey"
+      }
     },
     "dnsLabelPrefix": {
-      "value": "GEN-UNIQUE"
+      "value": "learn-devops"
     }
   }
 }
